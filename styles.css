@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+section {
+  position: relative;
+  border: 1px solid black;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.section-title {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #ff8080;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 125%;
+}
+
+.section-content {
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 991px) {
+  .desktop-view {
+    width: 50%;
+    float: left;
+  }
+  
+  .section-title {
+    font-size: 110%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .desktop-view {
+    width: 100%;
+    float: none;
+  }
+  
+  .section-title {
+    font-size: 125%;
+  }
+}
